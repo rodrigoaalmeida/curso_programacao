@@ -7,9 +7,9 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		String x;
-		x = sc.next();
-		System.out.println("Voce digitou: " + x);
+		double x;
+		x = sc.nextDouble();
+		System.out.printf("Voce digitou: %.2f%n", x);
 		
 		sc.close();
 
