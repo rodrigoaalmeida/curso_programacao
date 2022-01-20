@@ -1,18 +1,17 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
 		
-		double b, B, h, area;
+		Scanner sc = new Scanner(System.in);
 		
-		b = 6.0;
-		B = 8.0;
-		h = 5.0;
+		String x;
+		x = sc.next();
+		System.out.println("Voce digitou: " + x);
 		
-		area = (b + B) / 2.0 * h;
-		
-		System.out.println(area);
+		sc.close();
 
 	}
 
