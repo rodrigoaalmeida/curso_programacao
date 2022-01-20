@@ -8,9 +8,16 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		char x;
-		x = sc.next().charAt(0);
-		System.out.println("Voce digitou: " + x);
+		String s1, s2, s3;
+		
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
+		
+		System.out.println("Dados Digitados:");
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
 		
 		sc.close();
 
