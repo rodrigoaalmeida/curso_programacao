@@ -8,20 +8,15 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 
-		double preco = 34.5;
-		double desconto;
-
-		if (preco < 20.0) {
-			desconto = preco * 0.1;
-		} else {
-			desconto = preco * 0.05;
-		}
-
-		System.out.println("Primeiro desconto: " + desconto);
-
-		double descontoTernario = (preco < 20.0) ? preco * 0.1 : preco * 0.05;
-
-		System.out.println("Segundo desconto: " + descontoTernario);
+		double largura = sc.nextDouble();
+		double comprimento = sc.nextDouble();
+		double metroQuadrado = sc.nextDouble();
+		
+		double area = largura * comprimento;
+		double preco = area * metroQuadrado;
+		
+		System.out.printf("AREA = %.2f%n", area);
+		System.out.printf("PRECO = %.2f%n", preco);
 
 		sc.close();
 
